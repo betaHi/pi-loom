@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# npm pack output
+*.tgz
+
+# Workflow journals (resume state) and local run artifacts
+*.journal.json
+.wf-journal.json
+*.local
+
+# Scratch / diagnostic files
+_*.mts
+_*.ts
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
