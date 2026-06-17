@@ -25,8 +25,9 @@ the orchestration is reproducible and scales to hundreds of subagents without
 flooding a context window.
 
 > New to dynamic workflows? Start with the deep-dive that explains the idea and
-> the design behind pi-loom:
-> [**Scheduling Models with Model-Written Scripts**](https://betahi.github.io/posts/dynamic-workflows-and-pi-loom-en/).
+> the design behind pi-loom — **Scheduling Models with Model-Written Scripts**
+> ([blog](https://betahi.github.io/posts/dynamic-workflows-and-pi-loom-en/) ·
+> [Medium](https://medium.com/@laymanlzw/scheduling-models-with-model-written-scripts-a-deep-dive-into-claude-code-dynamic-workflows-75c94513a833)).
 
 ---
 
