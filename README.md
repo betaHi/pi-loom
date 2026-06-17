@@ -10,18 +10,19 @@ of Claude Code's dynamic-workflow primitives (`agent` / `parallel` / `pipeline`
 / `phase` / `log` / `budget`) with schema-forced structured output, adversarial
 verification, and resumable journaling.
 
+Here's what it looks like in practice — one real run inside a pi-based host. The
+model turned the plain-language request at the top into a workflow, fanned out one
+sub-agent per package, and pi-loom rendered the whole plan live as it ran: every
+phase listed, the current one highlighted, sub-agents checking off as they finish.
+
 ![pi-loom progress panel — full phase tree with parallel sub-agents, live in a web host](screenshots/web-panel-tree.png)
 
 You write the **plan as code**: a script holds the loop, the branching, and the
 intermediate results, and each step is an LLM agent. The model does the thinking;
-your code decides what runs next. The picture above is one run — the host model
-turned a plain-language request into a workflow, fanned out one sub-agent per
-package, and the panel rendered the whole plan as it executed (every phase listed,
-current highlighted, sub-agents checking off as they finish).
-
-Only the **final answer** reaches the main context — the dozens of intermediate
-agent results stay in script variables — so the orchestration is reproducible and
-scales to hundreds of subagents without flooding a context window.
+your code decides what runs next. Only the **final answer** reaches the main
+context — the dozens of intermediate agent results stay in script variables — so
+the orchestration is reproducible and scales to hundreds of subagents without
+flooding a context window.
 
 > New to dynamic workflows? Start with the deep-dive that explains the idea and
 > the design behind pi-loom:
