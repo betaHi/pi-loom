@@ -1,10 +1,14 @@
+<p align="center">
+  <img src="screenshots/logo.png" alt="pi-loom logo" width="120" height="120">
+</p>
+
 # pi-loom
 
-> Deterministic multi-agent **workflow orchestration** on top of the open-source
-> [`pi`](https://github.com/earendil-works/pi) agent harness — a faithful clone
-> of Claude Code's dynamic-workflow primitives (`agent` / `parallel` / `pipeline`
-> / `phase` / `log` / `budget`) with schema-forced structured output, adversarial
-> verification, and resumable journaling.
+Deterministic multi-agent **workflow orchestration** on top of the open-source
+[`pi`](https://github.com/earendil-works/pi) agent harness — a faithful clone
+of Claude Code's dynamic-workflow primitives (`agent` / `parallel` / `pipeline`
+/ `phase` / `log` / `budget`) with schema-forced structured output, adversarial
+verification, and resumable journaling.
 
 ![pi-loom progress panel — full phase tree with parallel sub-agents, live in a web host](screenshots/web-panel-tree.png)
 
